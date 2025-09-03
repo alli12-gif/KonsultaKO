@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section class="row p-5" style="background-color:#f9f9c9;">
+    <div class="col-md-6">
+        <p class="px-3 py-1 rounded-pill" style="background-color:#d7df6a; display:inline-block;">
+            ⚡ Digital Innovation for Good Governance
+        </p>
+        <h1 class="fw-bold mt-3">Konsulta<span style="color:#6c9b3b;">Ko</span></h1>
+        <h4 class="fw-bold">E-Ticketing Barangay System</h4>
+        <p>
+            Bridging the gap between citizens and barangay authorities through digital innovation.
+            Report concerns, track progress, and help build a more responsive community.
+        </p>
+        <button class="btn btn-warning rounded-pill">Demo 👁</button>
+    </div>
+
+    <div class="col-md-5 offset-md-1 bg-white p-4 rounded shadow">
+        <h5 class="fw-bold mb-3">Community Dashboard</h5>
+        <div class="d-flex justify-content-between mb-2">
+            <span class="px-2 py-1 rounded" style="background:#f5e7a3;">Complete</span>
+            <span class="px-2 py-1 rounded text-white" style="background:#f48042;">In progress</span>
+        </div>
+        <p>Response Rate</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-dark" style="width:80%"></div>
+        </div>
+        <p class="fw-bold">Recent Reports</p>
+        <ul class="list-unstyled">
+            <li>🟠 CCTV</li>
+            <li>🟡 Street Lights</li>
+            <li>⚪ ETC</li>
+        </ul>
+    </div>
+</section>

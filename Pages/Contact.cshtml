@@ -1,0 +1,74 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section -->
+<section class="py-5 text-center" style="background-color: #e4e776;">
+    <div class="container">
+        <!-- Hero Content -->
+        <h2 class="fw-bold mb-3">Ready to Make Your Voice Heard?</h2>
+        <p class="lead mb-4">
+            Join thousands of residents who are already using KonsultaKo to create positive change in our community.
+            Your concerns matter, and we're here to help address them.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-success btn-lg rounded-pill shadow-sm">
+                Start Reporting <span class="ms-2">➡</span>
+            </a>
+            <a href="#" class="btn btn-outline-dark btn-lg rounded-pill shadow-sm">
+                Contact Barangay Office
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color: #f4f4ce;">
+    <div class="container-fluid px-5">
+        <div class="row justify-content-between">
+
+            <!-- About -->
+            <div class="col-md-3">
+                <h5 class="fw-bold">KonsultaKo</h5>
+                <p class="small text-muted mb-1">E-ticketing system</p>
+                <p class="small text-muted">
+                    Empowering communities through digital innovation and transparent governance.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2">
+                <h6 class="fw-bold">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a asp-page="/Index" class="text-decoration-none text-dark">Home</a></li>
+                    <li><a asp-page="/Features" class="text-decoration-none text-dark">Features</a></li>
+                    <li><a asp-page="/HowItWorks" class="text-decoration-none text-dark">How It Works</a></li>
+                    <li><a asp-page="/Dashboard" class="text-decoration-none text-dark">Dashboard</a></li>
+                </ul>
+            </div>
+
+            <!-- Supports -->
+            <div class="col-md-2">
+                <h6 class="fw-bold">Supports</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-dark">Help Center</a></li>
+                    <li><a asp-page="/Contact" class="text-decoration-none text-dark">Contact Us</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 text-md-end">
+                <h6 class="fw-bold">Contact Info</h6>
+                <p class="small mb-0" style="white-space: pre-line;">
+                    Barangay Hall, Main Street
+                    City, Province 1234
+                    Phone: (123) 456-7890
+                    Email: info@konsultako.gov.ph
+                </p>
+            </div>

@@ -1,0 +1,35 @@
+﻿@page
+@model KonsultaKO.Pages.TicketModel
+@{
+    ViewData["Title"] = "New Ticket";
+}
+
+<div class="container" id="reportForm">
+    <h2>New Ticket</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="complaint">Complains Here:</label>
+            <textarea id="complaint" name="ComplaintText" class="form-control" placeholder="Type your complaint..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="upload">Upload Picture:</label>
+            <input type="file" id="upload" name="UploadedImage" class="form-control-file" accept="image/*" />
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="chat-btn" onclick="chatBarangay()">Chat the Barangay</button>
+            <button type="submit" class="submit-btn">Submit to Barangay</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        function chatBarangay() {
+            alert("Redirecting to Barangay chat...");
+            // Add actual chat logic or redirection here
+        }
+    </script>
+}

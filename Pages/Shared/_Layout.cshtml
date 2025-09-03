@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KonsultaKO</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KonsultaKO.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- ✅ KonsultaKo Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color:#e4e776;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" asp-page="/Index">
+                Konsulta<span style="color:#6c9b3b;">Ko</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" asp-page="/Index">Home</a></li>  
+                    <li class="nav-item"><a class="nav-link" asp-page="/Feature">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/HowItWorks">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/Dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/Contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>   
+    </nav>
+
+    <!--  Index.cshtml content  -->
+    <div class="container-fluid p-0">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--  Footer -->
+    <footer class="text-center py-3 border-top">
+        <div class="container">
+            &copy; 2025 - KonsultaKO
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
